@@ -16,8 +16,8 @@ const App = () => {
     setLoading(true)
     getData().then(data=> {
       setTodos(data)
+      setLoading(false)  
      })
-    setLoading(false)
   },[])
   return (
     <div id="main">
